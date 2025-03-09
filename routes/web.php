@@ -8,12 +8,7 @@ Route::get('/welcome', function () {
 });
 
 
-// Route::get('/', function () {
-//     return view('layouts.app');
-// })->name('homepage');
-
 Route::get('/', [HomePageController::class, 'index'])->name('homepage');
-
 
 
 Route::get('/autori', function () {
